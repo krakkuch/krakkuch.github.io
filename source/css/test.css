@@ -1,0 +1,46 @@
+div{
+    font-size: 20px;
+}
+
+span{
+    color: #ffb405;
+}
+.text{
+    color: red
+}
+
+.text_span{
+    color: darkolivegreen !important;
+}
+
+[custom_data=""]{
+    color: aqua
+}
+
+span.text{
+    color: dimgray
+}
+
+.block>p{
+    font-size: 10px;
+}
+
+.block p{
+    font-size: 30px;
+}
+
+p{
+    font-family: Arial, "Hevelvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #000;
+    text-transform: none;
+    text-indent: none;
+    letter-spacing: none;
+    line-height: none;
+    white-space: none;
+    word-spacing: none;
+    
+}
