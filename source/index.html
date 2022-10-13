@@ -54,33 +54,37 @@
         
         
     
-    <div class="skills">
-        <h2>Что я умею</h2>
-        <img src="..." alt=""></div>
-        
-        <div class="skills">
-        <h3>Веб-дизайн</h3>
-        <p>Информация о веб-разработке.</p>
+   <div class="skills">
+        <div class="skills_container">
+            <h2>Что я умею</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="skills_item">
+                <img src="img/pc.png" alt="">
+                <h3>Веб-дизайн</h3>
+                <p>Информация о Веб-дизайне.</p>
+            </div>
+            <div class="skills_item">
+                <img src="img/log.png" alt="">
+                <h3>Разработка</h3>
+                <p>Информация о разработке.</p>
+            </div>
+            <div class="skills_item">
+                <img src="img/log2.png" alt="">
+                <h3>СЕО оптимизация</h3>
+                <p>Информация о СЕО оптимизации.</p>
+            </div>
+            <div class="skills_item">
+                <img src="img/log3.png" alt="">
+                <h3>Маркетинг</h3>
+                <p>Информация о маркетинге.</p>
+            </div>
+            <div class="clear"></div>
         </div>
-        
-        
-    
-    <div class="skills">
-        <img src="..." alt="">
-        <h3>Разработка</h3>
-        <p>Информация о разработке.</p></div>
-       
-    
-    <div class="skills">
-        <img src="..." alt="">
-        <h3>СЕО-Оптимизация</h3>
-        <p>Информация о СЕО-оптимизации.</p>
     </div>
-    
-    
-    <div class="skills"><img src="..." alt="">
-        <h3>Маркетинг</h3>
-        <p>Информация о маркетинге.</p></div>
        
     
     
@@ -92,46 +96,57 @@
         <div class="calculator">
             <h2>Расчёт стоимости</h2>
             <h3>ТИП САЙТА</h3>
-            <select name="list1" id="list">
+            <select class="list" name="type" id="typesyte">
+           <option value="Option1" selected disabled>Выберите пункт</option>
            <option value="Option1">Option1</option>
            <option value="Option1">Option2</option>
            <option value="Option1">Option3</option>
-           <option value="Option1">Option4</option>
        </select>
             <h3>Дизайн</h3>
-            <select name="list1" id="list">
+            <select class="list" name="type" id="typesyte">
+           <option value="Option2" selected disabled>Выберите пункт</option>
            <option value="Option2">Option1</option>
            <option value="Option2">Option2</option>
            <option value="Option2">Option3</option>
-           <option value="Option2">Option4</option>
        </select>
             <h3>Адаптивность</h3>
-            <select name="list1" id="list">
+            <select class="list" name="type" id="typesyte">
+           <option value="Option3" selected disabled>Выберите пункт</option>
            <option value="Option3">Option1</option>
            <option value="Option3">Option2</option>
            <option value="Option3">Option3</option>
-           <option value="Option3">Option4</option>
        </select>
+           <div class="days">
             <h3>Сроки - 0</h3>
             <h3>Стоимость - 0</h3>
+           </div>
         </div>
         
         <div class="statistic">
+        <div class="statistic_container">
             <h2>Немного статистики</h2>
-            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614531402_196-p-smailik-na-belom-fone-204.png" alt="Смайлик" width="100" border="">
-            <p><b>120</b></p>
-            <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
-            <img src="https://www.vippng.com/png/full/165-1654023_solution-icon-03-icono-de-paginas-web.png" alt="<\>" width="100" border="">
-            <p><b>4.600</b></p>
-            <p>ЧАСОВ РАБОТЫ</p>
-            <img src="https://www.pngarts.com/files/9/Vector-Green-Tick-PNG-Free-Download.png" alt="Галочка" width="100" border="">
-            <p><b>340</b></p>
-            <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
-            <img src="https://img2.freepng.ru/20190826/esk/transparent-trophy-5d66ae40b0af01.0456065615670103687237.jpg" alt="Кубок" width="100" border="">
-            <p><b>23</b></p>
-            <p>НАГРАД ПОЛУЧЕНО</p>
+            <div class="statistic_item">
+                <img src="img/logo1.png" alt="">
+                <h3>120</h3>
+                <p>Счастливых клиентов</p>
+            </div>
+            <div class="statistic_item">
+                <img src="img/logo2.png" alt="">
+                <h3>4600</h3>
+                <p>Часов работы</p>
+            </div>
+            <div class="statistic_item">
+                <img src="img/logo3.png" alt="">
+                <h3>340</h3>
+                <p>Проектов завершено</p>
+            </div>
+            <div class="statistic_item">
+                <img src="img/logo4.png" alt="">
+                <h3>23</h3>
+                <p>Наград получено</p>
+            </div>
         </div>
-        
+    </div>
     
     <div class="reviews">
         <h2>Отзывы</h2>
@@ -145,21 +160,34 @@
     </div>
         
         <div class="contacts">
-            <h2>Мои контакты</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, autem id eligendi, quaerat quae nostrum.</p>
-            <span>Московская область г.Подольск</span>
-            <span>vipper27@mail.ru</span>
-            <span>8-915-416-60-67</span>
+        <div class="contacts_container">
+            <h2>Мои Контакты</h2>
+            <div class="contacts_data">
+                <div class="contacts_data_item">
+                    <img src="img/geo.png" alt="">
+                    <p>Санкт-Петербург, Невский проспект 11</p>
+                </div>
+                <div class="contacts_data_item">
+                    <img src="img/mail.png" alt="">
+                    <p>info@mycompany.ru</p>
+                </div>
+                <div class="contacts_data_item">
+                    <img src="img/tel.png" alt="">
+                    <p>+7 999-999-99-99</p>
+                </div>
+            </div>
+            <div class="callme">
+            <h3>Оставьте мне сообщение</h3></div>
+            <form action="#">
+                <div class="contacts_inputs">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Email">
+                </div>
+                <textarea name="message" id="messageText" placeholder="Введите текст" cols="30" rows="10"></textarea>
+                <input type="submit" value="Отправить">
+            </form>
         </div>
-        
-        <div class="sendme">
-           <h3>Оставьте мне сообщение</h3>
-            <input type="text" name="text_name" value="" placeholder="Введите ваше имя">
-            <input type="text" name="text_mail" value="" placeholder="Введите вашу почту">
-            <br> <br>
-            <textarea name="text_message" id="1" cols="60" rows="8" value="" placeholder="Введите ваше сообщение"></textarea>
-            <input type="submit" value="Отправить">
-        </div>
+    </div>
         
         
         
