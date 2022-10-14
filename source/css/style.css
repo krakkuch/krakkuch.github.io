@@ -194,6 +194,8 @@ color: orange;
     width: 600px;
     height: 50px;
     background: #999;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
 }
 
 .days{
@@ -255,6 +257,7 @@ color: orange;
 
 .reviews input{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
  
 
@@ -279,7 +282,7 @@ color: orange;
 .contacts_data_item{
     padding-top: 50px;
     font-size: 22px;
-    padding-left: 235px;
+    padding-left: 385px;
     color: white;
     float: left;
 }
@@ -293,11 +296,50 @@ color: orange;
     
 }
 
-.contacts_inputs textarea{
-     box-sizing: border-box;
+
+.contacts_inputs{
+   padding-top: 20px; 
+    font-weight: bold;
+}
+
+.inputone{
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+}
+
+.inputtwo{
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+}
+
+.textareaone{
+    width: 400px;
+    height: 130px;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+}
+
+.sendkey{
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    margin-top: 20px;
 }
 
 .map img{
     width: 100%;
     height: 600px;
+}
+
+.end{
+    font-size: 15px;
+    font-weight: bold;
 }
