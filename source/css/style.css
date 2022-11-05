@@ -707,6 +707,7 @@ main{
     .title_container, .title_container h4, .title_container input{
         color: white;
     }
+    
     .main{
         position: relative;
     }
@@ -719,8 +720,9 @@ main{
         right: 0;
         background: rgba(0,0,0,0.6);
     }
-    .title__container{
+    .title_container{
         position: relative;
+        z-index: 5;
     }
 }
 
