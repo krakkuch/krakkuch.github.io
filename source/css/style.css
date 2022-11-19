@@ -184,7 +184,7 @@ main{
     font-size: 33px;
     margin: 10px auto;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .aboutme p{
@@ -337,9 +337,9 @@ main{
     text-align: center;
     width: 214px;
     font-size: 33px;
-    font-weight: bold;
     margin: 0px auto 30px;
     padding-bottom: 5px;
+    text-transform: uppercase;
     
 }
 
@@ -363,6 +363,7 @@ main{
     width: 100%;
     margin-bottom: 40px;
 }
+
 
 .description_left{
    
@@ -457,14 +458,10 @@ main{
     background:  url(../img/select.png) 98% 54%/auto no-repeat, #eee;
 }
 
-.days{
+.days, .price{
     margin-bottom: 0px;
     font-size: 21px;
-}
-
-.price{
-    margin-bottom: 0px;
-    font-size: 21px;
+    
 }
 .calculator_footer p{
     margin-bottom: 0;
@@ -477,16 +474,6 @@ main{
     font-size: 29px;
     float: right;
 }
-
-.price .digit2{
-    font-size: 29px;
-    float: right;
-}
-
-.calculator_footer button{
-    width: 200px;
-}
-
 .statistic{
     background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
@@ -503,8 +490,8 @@ main{
     font-size: 33px;
     margin: 0px auto 30px;
     padding-bottom: 5px;
+    text-transform: uppercase;
     padding-top: 100px;
-    font-weight: bold;
 }
 
 .statistic_container hr{
@@ -540,30 +527,52 @@ main{
     margin-right: 53px;
 }
 
-.reviews h2{
-    padding-top: 60px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+.reviews_container{
+    padding-bottom: 140px;
 }
 
-.reviews hr{
+.reviews_container h2{
+     text-align: center;
+    max-width: 390px;
+    font-size: 33px;
+    margin: 0px auto 30px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.reviews_container hr{
     height: 4px;
     border: none;
     background: #d17700;
     width: 80px;
-    margin: 0 auto 90px;
+    margin: 0 auto 60px;
     opacity: 1;
-}
-
-
-.reviews img{
-}
     
-.reviews p{
-
 }
 
+.review{
+    text-align: center;
+}
+
+.review img{
+    margin-bottom: 36px;
+}
+
+.review_text{
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 36px;
+}
+
+.review_author{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.review_author span{
+    font-weight: 800;
+}
 
 .contacts{
     background: url(../img/bg4.jpg) center/cover no-repeat;
@@ -726,3 +735,34 @@ main{
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+:target{
+    scroll-margin-top: 20px;
+}
+
+.element-animation{
+    opacity 0;
+}
+
+.element-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	height: 70%;
+}
+
+#carouselReview .carousel-indicators{
+    margin-bottom: -10px;
+}
+
+#carouselReview .carousel-indicators [data-bs-target]{
+    background-color: #ff6c00;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+   background-color: #ff6c00; 
+}
