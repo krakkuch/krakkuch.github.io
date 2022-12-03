@@ -1,6 +1,10 @@
 $(document).ready(function(){
     
-    $("#inputTel").mask("+7(999) 999-9999");
+        //Включаем WOW
+     new WOW().init();
+    
+//Маска номера телефона
+    $("#inputTel").mask("+7 (999) 999-9999");
     
     $('form').submit(function(){
         
@@ -10,7 +14,7 @@ $(document).ready(function(){
         }
     });
         
-    $('form').submit(function(event)){
+    $('form').submit(function(event){
                      event.preventDefault();
     
     $.ajax({
@@ -149,3 +153,5 @@ $(document).ready(function(){
 
         }, 1000);
     });
+
+
