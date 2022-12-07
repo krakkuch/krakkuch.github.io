@@ -94,8 +94,6 @@ nav{
 .menu li a:hover{
     color: darkorange;
     transform: scale(1.5);
-    
-    
 }
 
 .menu li a:active{
