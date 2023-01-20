@@ -27,9 +27,40 @@ $(document).ready(function(){
         $("form").trigger("reset");
     });
     return false;
+        
 });
-                     
     
+    
+    $("#exampleModal").on("click", function(){
+    let site = $("#selectSite option:selected").text()
+    let design = $("#selectDesign option:selected").text()
+    let adaptive = $("#selectAdaptive option:selected").text()
+    $("input[name='attribute1']").val(site);
+    $("input[name='attribute2']").val(design);
+    $("input[name='attribute3']").val(adaptive);
+}); 
+
+    $("#modal-footer").on("click", function(){
+    event.preventDefault();
+
+$.ajax({
+type: "POST",
+url: "",
+data: $(this).serialize()
+}).done(function (){
+$(this).find("input").val("");
+alert("Успешно отправлено!");
+$("form").trigger("reset");
+});
+return false;
+});
+    
+    
+    
+    $('#selectSite').val();
+/* или */
+$('selectSite[name=type]').val();
+
     
     setTimeout(function(){$(".loaderArea").css("display", "none")}, 3000);
     
