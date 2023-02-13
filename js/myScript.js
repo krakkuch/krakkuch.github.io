@@ -7,28 +7,42 @@ $(document).ready(function(){
     $("#inputTel").mask("+7 (999) 999-9999");
     
     $('form').submit(function(){
-        
+    event.preventDefault()    
         if ($("#inputTel").val() == "" || $("#inputEmail3").val() == ""){
             event.preventDefault();
             alert("Неверный ввод данных, попробуйте снова");
         }
-    });
-        
-    $('form').submit(function(event){
-                     event.preventDefault();
-    
+        else{
+            event.preventDefault();
     $.ajax({
         type: "POST",
         url: "php/mail.php",
         data: $(this).serialize()
     }).done(function (){
         $(this).find("input").val("");
+        $(".btn-close").click();
+        alert("Успешно отправлено!");
+        $("form").trigger("reset");
+    });
+    return false;
+        }
+    });
+        
+    
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "php/mail.php",
+        data: $(this).serialize()
+    }).done(function (){
+        $(this).find("input").val("");
+        $(".btn-close").click();
         alert("Успешно отправлено!");
         $("form").trigger("reset");
     });
     return false;
         
-});
+
     
     
     $("#exampleModal").on("click", function(){
